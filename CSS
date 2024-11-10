@@ -1,1 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
 
+header {
+    background: #004080; /* Dark blue background for header */
+    color: #ffffff; /* White text color */
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none; /* Remove default list styles */
+    padding: 0;
+    margin: 0; /* Remove default margin */
+}
+
+nav ul li {
+    display: inline-block; /* Display list items inline */
+    margin: 0 15px; /* Space between items */
+    position: relative; /* Position relative for submenu positioning */
+}
+
+nav ul li a {
+    color: #ffffff; /* White text color for links */
+    text-decoration: none; /* Remove underline from links */
+    padding: 5px 10px; /* Padding around links */
+}
+
+nav ul ul {
+    display: none; /* Hide submenus by default */
+    position: absolute; /* Position them relative to the parent */
+    background: #0066cc; /* Background color for submenus */
+    padding: 10px; /* Padding for submenu items */
+    border-radius: 5px; /* Optional: rounded corners */
+    z-index: 1000; /* Ensure submenus are above other content */
+}
+
+nav ul li:hover > ul {
+    display: block; /* Show submenu on hover */
+}
+
+nav ul ul li {
+    display: block; /* Stack submenu items vertically */
+    margin: 5px 0; /* Margin between submenu items */
+}
+
+main {
+    padding: 20px; /* Padding for main content */
+}
+
+section {
+    margin-bottom: 20px; /* Space between sections */
+}
+
+footer {
+    text-align: center; /* Center text in footer */
+    padding: 10px 0; /* Padding for footer */
+    background: #004080; /* Dark blue background for footer */
+    color: #ffffff; /* White text color */
+    position: relative; /* Position relative for footer */
+    bottom: 0; /* Align to bottom */
+    width: 100%; /* Full width */
+}
+
+/* Optional: Add hover effects for links */
+nav ul li a:hover {
+    background: #0056b3; /* Darker blue on hover */
+    border-radius: 5px; /* Rounded corners on hover */
+}
