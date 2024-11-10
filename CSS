@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,68 +7,74 @@ body {
 }
 
 header {
-    background: #004080; /* Dark blue background for header */
-    color: #ffffff; /* White text color */
-    padding: 10px 0;
+    background: #003366; /* Dark blue background */
+    color: #ffffff; /* White text */
+    padding: 20px 0;
     text-align: center;
 }
 
+h1 {
+    margin: 0;
+}
+
+nav {
+    background: #004080; /* Slightly lighter blue */
+}
+
 nav ul {
-    list-style: none; /* Remove default list styles */
+    list-style: none;
     padding: 0;
-    margin: 0; /* Remove default margin */
+    margin: 0;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul li {
-    display: inline-block; /* Display list items inline */
-    margin: 0 15px; /* Space between items */
-    position: relative; /* Position relative for submenu positioning */
+    position: relative;
 }
 
 nav ul li a {
-    color: #ffffff; /* White text color for links */
-    text-decoration: none; /* Remove underline from links */
-    padding: 5px 10px; /* Padding around links */
+    display: block;
+    padding: 15px 20px;
+    color: #ffffff; /* White text */
+    text-decoration: none;
 }
 
-nav ul ul {
-    display: none; /* Hide submenus by default */
-    position: absolute; /* Position them relative to the parent */
-    background: #0066cc; /* Background color for submenus */
-    padding: 10px; /* Padding for submenu items */
-    border-radius: 5px; /* Optional: rounded corners */
-    z-index: 1000; /* Ensure submenus are above other content */
+nav ul li a:hover {
+    background: #00509e; /* Hover effect */
 }
 
-nav ul li:hover > ul {
+nav ul li ul {
+    display: none; /* Hide submenus */
+    position: absolute;
+    top: 100%; /* Position below the parent */
+    left: 0;
+    background: #004080; /* Match parent background */
+    padding: 0;
+}
+
+nav ul li:hover ul {
     display: block; /* Show submenu on hover */
 }
 
-nav ul ul li {
-    display: block; /* Stack submenu items vertically */
-    margin: 5px 0; /* Margin between submenu items */
+nav ul li ul li {
+    width: 200px; /* Set width for submenu items */
 }
 
 main {
-    padding: 20px; /* Padding for main content */
+    padding: 20px;
 }
 
 section {
-    margin-bottom: 20px; /* Space between sections */
+    margin-bottom: 20px;
 }
 
 footer {
-    text-align: center; /* Center text in footer */
-    padding: 10px 0; /* Padding for footer */
-    background: #004080; /* Dark blue background for footer */
-    color: #ffffff; /* White text color */
-    position: relative; /* Position relative for footer */
-    bottom: 0; /* Align to bottom */
-    width: 100%; /* Full width */
-}
-
-/* Optional: Add hover effects for links */
-nav ul li a:hover {
-    background: #0056b3; /* Darker blue on hover */
-    border-radius: 5px; /* Rounded corners on hover */
+    background: #003366; /* Dark blue background */
+    color: #ffffff; /* White text */
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
